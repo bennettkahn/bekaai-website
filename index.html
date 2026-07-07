@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEKA — AI systems, built and shipped</title>
+<meta name="description" content="BEKA LLC is an independent AI engineering practice. One senior engineer who scopes, builds, and ships production AI systems for your business.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231740E8'/><text x='50' y='68' font-size='52' font-family='Helvetica,Arial,sans-serif' font-weight='700' fill='white' text-anchor='middle'>B</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:title" content="BEKA — AI systems, built and shipped">
+<meta property="og:description" content="Independent AI engineering. One senior engineer who scopes, builds, and ships production AI systems for your business.">
+<meta property="og:url" content="https://bekaai.com">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="wordmark" href="#top" aria-label="BEKA home">BEKA<span class="wordmark-dot">.</span></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="#work">What I do</a>
+    <a href="#process">Process</a>
+    <a href="#why">Why BEKA</a>
+    <a class="nav-cta" href="#contact">Start a project</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="eyebrow-tick" aria-hidden="true"></span>BEKA LLC · Independent AI engineering</p>
+      <h1>AI that does<br>real work<span class="accent">.</span></h1>
+      <p class="lede">BEKA builds custom AI systems for businesses — software that reads your documents, drafts your work product, and automates the jobs that eat your team's week. Scoped, built, and shipped by one senior engineer.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Start a project</a>
+        <a class="btn btn-ghost" href="#work">See what I build</a>
+      </div>
+    </div>
+
+    <figure class="hero-schematic" aria-label="Diagram: documents, spreadsheets, and email flow into BEKA and come out as working software">
+      <svg id="schematic" viewBox="0 0 560 420" fill="none" role="img" aria-hidden="true">
+        <!-- input nodes -->
+        <g class="node-group in" data-delay="0">
+          <rect class="node" x="8" y="52" width="150" height="46" rx="10"/>
+          <text class="node-label" x="83" y="80">DOCUMENTS</text>
+        </g>
+        <g class="node-group in" data-delay="1">
+          <rect class="node" x="8" y="140" width="150" height="46" rx="10"/>
+          <text class="node-label" x="83" y="168">SPREADSHEETS</text>
+        </g>
+        <g class="node-group in" data-delay="2">
+          <rect class="node" x="8" y="228" width="150" height="46" rx="10"/>
+          <text class="node-label" x="83" y="256">EMAIL &amp; INTAKE</text>
+        </g>
+        <g class="node-group in" data-delay="3">
+          <rect class="node" x="8" y="316" width="150" height="46" rx="10"/>
+          <text class="node-label" x="83" y="344">MANUAL PROCESS</text>
+        </g>
+
+        <!-- wires: inputs -> core -->
+        <path class="wire" d="M158 75  C 210 75, 218 190, 252 196"/>
+        <path class="wire" d="M158 163 C 200 163, 214 196, 252 201"/>
+        <path class="wire" d="M158 251 C 200 251, 214 218, 252 213"/>
+        <path class="wire" d="M158 339 C 210 339, 218 224, 252 218"/>
+
+        <!-- core node -->
+        <g class="node-group core" data-delay="4">
+          <rect class="node core-rect" x="252" y="172" width="108" height="70" rx="14"/>
+          <text class="core-label" x="306" y="212">BEKA</text>
+        </g>
+
+        <!-- wires: core -> outputs -->
+        <path class="wire" d="M360 192 C 400 186, 404 121, 448 119"/>
+        <path class="wire" d="M360 207 C 400 207, 404 207, 448 207"/>
+        <path class="wire" d="M360 222 C 400 228, 404 293, 448 295"/>
+
+        <!-- output nodes -->
+        <g class="node-group out" data-delay="5">
+          <rect class="node out-node" x="448" y="96" width="104" height="46" rx="10"/>
+          <text class="node-label out-label" x="500" y="124">DRAFTS</text>
+        </g>
+        <g class="node-group out" data-delay="6">
+          <rect class="node out-node" x="448" y="184" width="104" height="46" rx="10"/>
+          <text class="node-label out-label" x="500" y="212">ANSWERS</text>
+        </g>
+        <g class="node-group out" data-delay="7">
+          <rect class="node out-node" x="448" y="272" width="104" height="46" rx="10"/>
+          <text class="node-label out-label" x="500" y="300">HOURS BACK</text>
+        </g>
+
+        <!-- traveling pulses (JS animates along the wires) -->
+        <circle class="pulse" r="3.5"/>
+        <circle class="pulse" r="3.5"/>
+        <circle class="pulse" r="3.5"/>
+      </svg>
+      <figcaption class="schematic-caption">Your operation, wired for AI</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ WHAT I DO ============ -->
+  <section class="section" id="work">
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-tick" aria-hidden="true"></span>What I do</p>
+      <h2>Custom AI, built around how your business actually runs</h2>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="card-glyph" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M8 4h11l7 7v17H8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 4v7h7" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 17h8M12 22h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Document-heavy work, automated</h3>
+        <p>Systems that read, understand, and produce documents at production quality — intake, review, extraction, and first drafts your team refines instead of writes.</p>
+      </article>
+      <article class="card">
+        <div class="card-glyph" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="6" width="24" height="17" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M9 12l4 3.5L9 19M16 19h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 27h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Custom AI applications</h3>
+        <p>Full working software — web apps and internal tools with AI at the core — designed for your workflow and your data, not adapted from someone else's product.</p>
+      </article>
+      <article class="card">
+        <div class="card-glyph" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="6" r="2.6" stroke="currentColor" stroke-width="1.8"/><circle cx="26" cy="6" r="2.6" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="26" r="2.6" stroke="currentColor" stroke-width="1.8"/><circle cx="26" cy="26" r="2.6" stroke="currentColor" stroke-width="1.8"/><path d="M8 8l5 5M24 8l-5 5M8 24l5-5M24 24l-5-5" stroke="currentColor" stroke-width="1.8"/></svg>
+        </div>
+        <h3>Agents and integrations</h3>
+        <p>AI agents that plug into the tools you already use — pulling from your systems, taking multi-step actions, and handing back finished work with a person in the loop.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section section-alt" id="process">
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-tick" aria-hidden="true"></span>How an engagement runs</p>
+      <h2>From "could AI do this?" to software your team uses daily</h2>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step-num" aria-hidden="true">01</span>
+        <div>
+          <h3>Scope</h3>
+          <p>We talk through where your team's time actually goes. I identify what AI can genuinely take over — and tell you plainly what it can't.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">02</span>
+        <div>
+          <h3>Prototype</h3>
+          <p>A working proof on your real documents and data within weeks, not months. You judge results, not slideware.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">03</span>
+        <div>
+          <h3>Production</h3>
+          <p>The prototype becomes reliable software: secure, tested, monitored, and fitted into your team's daily workflow.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">04</span>
+        <div>
+          <h3>Run &amp; improve</h3>
+          <p>I stay on to keep it sharp as models improve and your needs shift — or hand it off cleanly, documented for your team.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ WHY ============ -->
+  <section class="section" id="why">
+    <div class="why-grid">
+      <div class="section-head why-head">
+        <p class="eyebrow"><span class="eyebrow-tick" aria-hidden="true"></span>Why BEKA</p>
+        <h2>One engineer, end to end</h2>
+        <p class="why-lede">When you hire BEKA, the person you talk to is the person who builds it. No account managers, no junior handoffs, no telephone game between your problem and the code.</p>
+      </div>
+      <ul class="why-list">
+        <li>
+          <h3>Senior work, direct line</h3>
+          <p>Every conversation, decision, and line of code comes from the same senior engineer. Questions get answered by the person who knows the system — because he wrote it.</p>
+        </li>
+        <li>
+          <h3>Built to ship</h3>
+          <p>The goal is never a demo. It's software running in your business, measured by the hours it gives back and the work it gets right.</p>
+        </li>
+        <li>
+          <h3>Honest about AI</h3>
+          <p>AI is genuinely transformative for some work and wrong for other work. You'll get a straight answer about which is which before you spend a dollar.</p>
+        </li>
+        <li>
+          <h3>Your data, handled seriously</h3>
+          <p>Systems are designed around confidentiality from day one — sensible architecture, least access, and clear answers about where your data goes.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <p class="eyebrow contact-eyebrow"><span class="eyebrow-tick" aria-hidden="true"></span>Start a project</p>
+      <h2>Tell me what's eating your team's week</h2>
+      <p class="contact-lede">A short email is plenty — what the work is, roughly how much time it takes, and what "solved" would look like. I'll reply with an honest read on whether AI can take it on.</p>
+      <a class="btn btn-primary btn-lg" href="mailto:bennettkahn@bekaai.com?subject=Project%20inquiry">bennettkahn@bekaai.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span class="wordmark footer-mark">BEKA<span class="wordmark-dot">.</span></span>
+  <span class="footer-legal">© <span id="year">2026</span> BEKA LLC. All rights reserved.</span>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
